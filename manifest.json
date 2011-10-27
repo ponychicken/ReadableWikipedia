@@ -1,0 +1,15 @@
+{
+  "name": "Readable Wikipedia",
+  "version": "1.1",
+  "description": "Applies some basic typographic rules on Wikipedia articles, to make them easier on the eyes and more readable.",
+  "content_scripts": [
+    {
+      "matches": ["http://*.wikipedia.org/*", "https://*.wikipedia.org/*"],
+      "css": ["wiki.css", "jquery-ui-1.8.16.custom.css"],
+      "js": ["jquery-1.6.4.min.js", "jquery-ui-1.8.16.custom.min.js", "wiki.js"]
+    }
+  ],
+  "icons": { "16": "16.png",
+          "48": "48.png",
+          "128": "128.png" }
+}
