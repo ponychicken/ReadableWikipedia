@@ -23,8 +23,6 @@ $widthSlider = $('<div id="width-slider"></div>').slider({
 		$('#bodyContent, #firstHeading-container').css('max-width', ui.value + '%');
 	}
 });
-$('#bodyContent, #firstHeading-container').css('max-width', localStorage.columnWidth + '%');
-$('#bodyContent').css('font-size', localStorage.textSize + 'em');
 
 $toggleNotes = $('<div id="toggleNotesCont"><input type="checkbox" id="toggleNotes"><label for="toggleNotes">Show footnotes</label></div>');
 $head.append($fontCurrent, $fontSlider, $widthCurrent, $widthSlider, $toggleNotes);
@@ -38,3 +36,6 @@ $('#p-cactions').attr('class', 'vectorTabs');
 $('#ca-move a').wrap('<span>');
 $('#firstHeading').wrap('<div id="firstHeading-container">');
 $('#firstHeading').after($('#left-navigation'), $('#right-navigation'));
+
+$('#bodyContent, #firstHeading-container').css('max-width', localStorage.columnWidth + '%');
+$('#bodyContent').css('font-size', localStorage.textSize + 'em');
