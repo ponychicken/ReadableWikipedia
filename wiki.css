@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 h1 i {
 font-style: normal!important;
 font-size: 1.1em;
@@ -21,11 +21,11 @@ a, #mw-panel.collapsible-nav div.collapsed h5 {
 color: #182E54!important;
 }
 #bodyContent, #firstHeading-container, #content > #firstHeading {
-	max-width: 60%;
+	max-width: 77ex;
 	margin: 0 auto;
 	text-rendering: optimizeLegibility;
 	font-family: 'PT Serif', serif;
-	line-height: 1.7em!important;
+	line-height: 1.72em!important;
 }
 body > div#mw-panel {
 	padding-top:0!important;
@@ -37,7 +37,6 @@ body > div#mw-panel {
 }
 #firstHeading-container {
 	height:80px;
-	max-width: 60%;
 	border-bottom: 1px dotted gray;
 }
 div#bodyContent{
@@ -98,7 +97,7 @@ div.thumbinner {
 }
 
 div#content {
-	padding-right: 11em!important;
+	padding-right: 11.5em!important;
 }
 
 div#simpleSearch {
@@ -157,14 +156,24 @@ div.vectorTabs ul {
 	border:none;
 	padding: 0;
 }
-/*@media all and (max-width: 40em) { 
+#font-slider {
+	width: 93%;
+}
+.ambox {
+	font-size: 0.8em;
+	line-height: 1.6em;
+}
+@media all and (max-width: 730px) { 
 	#mw-panel {
 		display:none;
 	}
 	div#content {
-		margin-left: 0em!important;
+		margin-left: 1em!important;
 	}
 	div#footer {
-		margin-left: 0em!important;
+		margin-left: 1em!important;
 	}
-}*/
+	div#mw-head {
+		width: 8em!important;
+	}
+}
