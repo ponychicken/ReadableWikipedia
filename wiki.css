@@ -2,25 +2,25 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic);
 
 h1 i {
-font-style: normal!important;
-font-size: 1.1em;
-border-bottom: 0!important;
-overflow: visible;
+	font-style: normal!important;
+	font-size: 1.1em;
+	border-bottom: 0!important;
+	overflow: visible;
 }
 h1, h2 {
-border-bottom: 0!important;
+	border-bottom: 0!important;
 }
 #siteSub, #siteNotice {
-display:none;
+	display:none;
 }
 sup, sub {
-font-size: 0.8em!important;
+	font-size: 0.8em!important;
 }
 sup a, sub a {
-color: black
+	color: black
 }
 a, #mw-panel.collapsible-nav div.collapsed h5 {
-color: #182E54!important;
+	color: #182E54!important;
 }
 #bodyContent, #firstHeading-container, #content > #firstHeading {
 	max-width: 77ex;
@@ -42,19 +42,19 @@ body > div#mw-panel {
 	border-bottom: 1px dotted gray;
 }
 div#bodyContent{
-font-size: 0.909em;
+	font-size: 0.909em;
 }
 div.thumbinner {
-border:none!important;
+	border:none!important;
 }
 div.tleft {
-margin-left: -250px
+	margin-left: -250px
 }
 div.tright {
-margin-right: -250px
+	margin-right: -250px
 }
 body {
-background: #FAF9F8;
+	background: #FAF9F8;
 }
 #mw-page-base, #mw-head-base, .reference, #mw-head .vectorTabs, #mw-head #right-navigation, .Template-Fact {
 	display: none;
@@ -69,25 +69,20 @@ div.thumbinner, div#content{
 	white-space:normal!important;
 	word-wrap: break-word;
 }
-/*#p-personal li:not(#pt-userpage) {
-margin-left: 25px!important;
-}*/
 div#mw-head {
-right: 0!important;
-
-width: 10em!important;
-
-position:fixed!important;
-height: 100%;
-padding-right: 0.5em;
-padding-top: .5em;
+	right: 0!important;
+	width: 10em!important;
+	position:fixed!important;
+	height: 100%;
+	padding-right: 0.5em;
+	padding-top: .5em;
 }
 #p-personal, #left-navigation, #right-navigation, #p-logo {
-position:static!important;
+	position:static!important;
 }
 
 #p-search {
-margin:0!important;
+	margin:0!important;
 }
 
 #p-personal ul {
