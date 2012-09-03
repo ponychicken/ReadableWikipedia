@@ -1,4 +1,6 @@
-@import url(//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Neuton:400,700,400italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic);
+
 h1 i {
 font-style: normal!important;
 font-size: 1.1em;
@@ -24,7 +26,7 @@ color: #182E54!important;
 	max-width: 77ex;
 	margin: 0 auto;
 	text-rendering: optimizeLegibility;
-	font-family: 'PT Serif', serif;
+	font-family: 'Neuton', 'PT Serif', serif;
 	line-height: 1.72em!important;
 }
 body > div#mw-panel {
@@ -62,8 +64,10 @@ div.thumbinner, div#content{
 }
 
 #p-personal ul, #p-personal li {
-float:none!important;
-margin-left:0!important;
+	float:none!important;
+	margin-left:0!important;
+	white-space:normal!important;
+	word-wrap: break-word;
 }
 /*#p-personal li:not(#pt-userpage) {
 margin-left: 25px!important;
