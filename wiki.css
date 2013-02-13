@@ -48,7 +48,7 @@ sup a, sub a {
 	color: black
 }
 a, #mw-panel.collapsible-nav div.collapsed h5 {
-	color: #182E54!important;
+	color: rgb(31, 68, 134)!important;
 }
 #bodyContent, #firstHeading-container, #content > #firstHeading {
 	max-width: 76ex;
@@ -57,7 +57,7 @@ a, #mw-panel.collapsible-nav div.collapsed h5 {
 	font-family: 'Droid Serif', serif;
 	line-height: 1.75em!important;
 }
-#mw-content-text p, #mw-content-text dd {
+#mw-content-text p, #mw-content-text dd, #mw-content-text ul {
 	line-height: 1.8em!important;
 }
 #mw-navigation div#mw-panel.collapsible-nav {
@@ -223,4 +223,10 @@ margin-bottom: -3px;
     border-radius: 2px;
     background: #aaa;
     border: 1px solid #444;
+}
+
+a.new {
+	color:black!important;
+	text-decoration: none!important;
+	cursor:hand!important;
 }

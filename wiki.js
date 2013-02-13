@@ -25,4 +25,5 @@ $('#firstHeading').after($('#left-navigation'), $('#right-navigation'));
 
 $('#bodyContent').css('font-size', localStorage.textSize + 'em');
 $('#firstHeading-container').css('max-width', $('#bodyContent').width()+'px');
+$('a.new').removeAttr("href");
 //$("#p-logo a").css({"background-image": "url(//upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg)"})
