@@ -1,6 +1,34 @@
-@import url(http://fonts.googleapis.com/css?family=Neuton:400,700,400italic&subset=latin,latin-ext);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic);
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('chrome-extension://__MSG_@@extension_id__/DroidSerif-Regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('chrome-extension://__MSG_@@extension_id__/DroidSerif-Italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('chrome-extension://__MSG_@@extension_id__/DroidSerif-Bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('chrome-extension://__MSG_@@extension_id__/DroidSerif-BoldItalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}
 h1 i {
 	font-style: normal!important;
 	font-size: 1.1em;
@@ -23,17 +51,21 @@ a, #mw-panel.collapsible-nav div.collapsed h5 {
 	color: #182E54!important;
 }
 #bodyContent, #firstHeading-container, #content > #firstHeading {
-	max-width: 77ex;
+	max-width: 76ex;
 	margin: 0 auto;
 	text-rendering: optimizeLegibility;
-	font-family: 'Neuton', 'PT Serif', serif;
-	line-height: 1.72em!important;
+	font-family: 'Droid Serif', serif;
+	line-height: 1.75em!important;
 }
-body > div#mw-panel {
+#mw-content-text p, #mw-content-text dd {
+	line-height: 1.8em!important;
+}
+#mw-navigation div#mw-panel.collapsible-nav {
 	padding-top:0!important;
-	top:0;
+	top:0!important;
 	
 }
+
 #firstHeading {
 	padding-top: 5px!important;
 }
@@ -175,4 +207,20 @@ div.vectorTabs ul {
 	div#mw-head {
 		width: 8em!important;
 	}
+}
+input[type='range'] {
+-webkit-appearance: none;
+padding-left:2px; padding-right:2px;
+-webkit-border-radius: 2px;
+border: 1px solid #bbb;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+margin-top: -3px;
+margin-bottom: -3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    background: #aaa;
+    border: 1px solid #444;
 }
