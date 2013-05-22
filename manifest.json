@@ -1,6 +1,6 @@
 {
   "name": "Readable Wikipedia",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Applies some basic typographic rules on Wikipedia articles, to make them easier on the eyes and more readable.",
   "content_scripts": [
     {

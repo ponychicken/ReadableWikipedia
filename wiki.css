@@ -57,6 +57,9 @@ a, #mw-panel.collapsible-nav div.collapsed h5 {
 	font-family: 'Droid Serif', serif;
 	line-height: 1.75em!important;
 }
+#bodyContent {
+	display: block;
+}
 #mw-content-text p, #mw-content-text dd, #mw-content-text ul {
 	line-height: 1.8em!important;
 }
