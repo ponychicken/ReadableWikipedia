@@ -6,6 +6,7 @@ It adds a slider to change the font-size and adapt the column width accordingly.
 
 
 ### Changelog
+* 1.4.1 Better live edit
 * 1.4.0 Number of small layout fixes
 * 1.3.3 Fix a bug with the german wikipedia
 * 1.3.2 Better link colors

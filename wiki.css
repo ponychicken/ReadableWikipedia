@@ -43,7 +43,7 @@ sup a, sub a {
 a, #mw-panel.collapsible-nav div.collapsed h5 {
   color: rgb(31, 68, 134)!important;
 }
-#bodyContent, #firstHeading-container, #content > #firstHeading {
+#bodyContent, #firstHeading-container, #content > #firstHeading, .mw-body-content {
   max-width: 76ex;
   margin: 0 auto;
   text-rendering: optimizeLegibility;
@@ -233,4 +233,8 @@ a.new {
   margin-left: 1em!important;
   display: inline;
   font-size: 1em!important;
+}
+
+.ve-activated #left-navigation {
+  margin: 0!important;
 }
