@@ -60,6 +60,11 @@ a, #mw-panel.collapsible-nav div.collapsed h5 {
   padding-top: 0!important;
   top: 0!important;
 }
+
+div#mw-panel {
+  top: 0;
+}
+
 #firstHeading {
   padding-top: 5px!important;
 }

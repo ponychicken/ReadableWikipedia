@@ -23,6 +23,8 @@ $('#ca-move a').wrap('<span>');
 $('#firstHeading').wrap('<div id="firstHeading-container">');
 $('#firstHeading').after($('#left-navigation'), $('#right-navigation'));
 
+$('#p-cactions menu').append($('#ca-talk'))
+
 $('#bodyContent').css('font-size', localStorage.textSize + 'em');
 $('#firstHeading-container').css('max-width', $('#bodyContent').width()+'px');
 $('a.new').removeAttr("href");
