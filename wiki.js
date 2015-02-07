@@ -10,8 +10,10 @@ $fontSlider.change(function () {
 	setTextsize();
 });
 
+var $style = $("<style>").appendTo("head");
+
 function setTextsize() {
-	$('#bodyContent').css('font-size', localStorage.textSize + 'em');
+	$style.text('.mw-body-content {font-size: ' + localStorage.textSize + 'em}');
 	$('#firstHeading-container').css('max-width', 'calc(' + localStorage.textSize + ' * 76ex)');
 }
 
