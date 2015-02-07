@@ -6,7 +6,7 @@
     {
       "matches": ["http://*.wikipedia.org/*", "https://*.wikipedia.org/*"],
       "css": ["wiki.css"],
-      "js": ["jquery-1.9.1.min.js", "wiki.js"]
+      "js": ["zepto.min.js", "wiki.js"]
     }
   ],
   "web_accessible_resources": [
