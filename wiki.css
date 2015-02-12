@@ -87,7 +87,7 @@ div.tright {
 body {
   background: #FAF9F8;
 }
-#mw-page-base, #mw-head-base, .reference, #mw-head .vectorTabs, #mw-head #right-navigation, .Template-Fact {
+#mw-page-base, #mw-head-base, #mw-head .vectorTabs, #mw-head #right-navigation {
   display: none;
 }
 div.thumbinner, div#content {

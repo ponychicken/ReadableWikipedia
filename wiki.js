@@ -1,3 +1,14 @@
+var $style = $("<style>").appendTo("head");
+var styleSettings = {
+	'.mw-body-content': {
+		'font-size': '1em'
+	},
+	'.reference, .Template-Fact': {
+		display: 'inline'
+	}
+}
+
+
 var $head = $('#mw-head');
 $head.prepend($('#p-search'));
 $toc = $('#toc');
@@ -10,20 +21,23 @@ $fontSlider.change(function () {
 	setTextsize();
 });
 
-var $style = $("<style>").appendTo("head");
 
-function setTextsize() {
-	$style.text('.mw-body-content {font-size: ' + localStorage.textSize + 'em!important}');
+function setStyle() {
+	var styleText = '.mw-body-content {font-size: ' + localStorage.textSize + 'em!important;} ';
+	
+	var display =  JSON.parse(localStorage.footnotes) ? 'inline' : 'none';
+	    styleText += '.reference, .Template-Fact {display:' + display + ';}';
+	$style.text(styleText);
 	$('#firstHeading-container').css('max-width', 'calc(' + localStorage.textSize + ' * 76ex)');
 }
 
 $toggleNotes = $('<div id="toggleNotesCont"><input type="checkbox" id="toggleNotes"><label for="toggleNotes">Show footnotes</label></div>');
 $head.append($fontCurrent, $fontSlider, $toggleNotes);
 
-var $refs = $('.reference, .Template-Fact');
-var footNotesHidden = false;
+
 $toggleNotes.find('input').change(function () {
-	$refs.toggle();
+	localStorage.footnotes = this.checked;
+	setStyle();
 });
 
 $('#p-cactions').attr('class', 'vectorTabs');
@@ -34,7 +48,9 @@ $('#firstHeading').after($('#left-navigation'), $('#right-navigation'));
 $('#p-cactions .menu ul').append($('#ca-talk'));
 $('#pt-userpage').append($('#pt-notifications'));
 
-
 $('a.new').removeAttr("href");
 
-setTextsize();
+// Init
+localStorage.footnotes = localStorage.footnotes || true;
+$toggleNotes.find('input').attr('checked', localStorage.footnotes);
+setStyle();

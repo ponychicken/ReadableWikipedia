@@ -1,7 +1,8 @@
 {
   "name": "Readable Wikipedia",
+  "short_name": "ReadableWiki",
   "version": "1.4.3",
-  "description": "Applies some basic typographic rules on Wikipedia articles, to make them easier on the eyes and more readable.",
+  "description": "Make Wikipedia more readable while keeping all of the functionality. Fix excessively long lines and make the font size adjustable.",
   "content_scripts": [
     {
       "matches": ["http://*.wikipedia.org/*", "https://*.wikipedia.org/*"],

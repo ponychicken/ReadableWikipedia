@@ -6,6 +6,7 @@ It adds a slider to change the font-size and adapt the column width accordingly.
 
 
 ### Changelog
+* 1.4.2 Small fixes
 * 1.4.2 More live fixes
 * 1.4.1 Better live edit
 * 1.4.0 Number of small layout fixes
