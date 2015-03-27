@@ -6,7 +6,7 @@ var styleSettings = {
 	'.reference, .Template-Fact': {
 		display: 'inline'
 	}
-}
+};
 
 
 var $head = $('#mw-head');
@@ -18,7 +18,7 @@ $fontSlider.val(localStorage.textSize || 0.94);
 
 $fontSlider.change(function () {
 	localStorage.textSize = this.value;
-	setTextsize();
+	setStyle();
 });
 
 
